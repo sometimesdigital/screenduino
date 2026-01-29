@@ -1,0 +1,236 @@
+{
+  "mode": "anim",
+  "width": 8,
+  "height": 2,
+  "functionName": "drawOca",
+  "framesData": [
+    {
+      "activeSegments": [
+        3,
+        4,
+        11,
+        12
+      ],
+      "pixels": {
+        "3-3": true,
+        "3-7": true,
+        "3-11": true,
+        "3-15": true,
+        "3-4": true,
+        "4-0": true,
+        "3-21": true,
+        "3-22": true,
+        "3-28": true,
+        "3-33": true,
+        "3-38": true,
+        "3-14": true,
+        "3-19": true,
+        "4-5": true,
+        "4-10": true,
+        "4-15": true,
+        "4-20": true,
+        "4-25": true,
+        "4-30": true,
+        "4-35": true,
+        "12-1": true,
+        "12-7": true,
+        "12-8": true,
+        "12-4": true,
+        "12-9": true,
+        "12-14": true,
+        "12-18": true,
+        "12-22": true,
+        "11-2": true,
+        "11-6": true,
+        "11-11": true,
+        "11-17": true,
+        "11-23": true,
+        "11-24": true,
+        "12-20": true,
+        "12-21": true,
+        "12-26": true,
+        "12-31": true,
+        "12-36": true,
+        "12-35": true,
+        "11-39": true,
+        "11-34": true,
+        "11-29": true,
+        "11-38": true
+      }
+    },
+    {
+      "activeSegments": [
+        3,
+        12,
+        11,
+        2
+      ],
+      "pixels": {
+        "3-2": true,
+        "3-6": true,
+        "3-3": true,
+        "3-4": true,
+        "3-21": true,
+        "3-27": true,
+        "3-32": true,
+        "3-37": true,
+        "3-9": true,
+        "3-14": true,
+        "3-19": true,
+        "3-24": true,
+        "3-29": true,
+        "3-34": true,
+        "3-39": true,
+        "12-0": true,
+        "12-6": true,
+        "12-7": true,
+        "12-3": true,
+        "12-8": true,
+        "12-13": true,
+        "12-17": true,
+        "12-21": true,
+        "11-1": true,
+        "11-5": true,
+        "11-10": true,
+        "11-16": true,
+        "11-22": true,
+        "11-23": true,
+        "11-24": true,
+        "12-20": true,
+        "12-30": true,
+        "11-33": true,
+        "11-28": true,
+        "11-32": true,
+        "11-36": true,
+        "12-35": true,
+        "11-29": true,
+        "2-19": true,
+        "3-10": true,
+        "3-15": true,
+        "3-12": true,
+        "12-4": true
+      }
+    },
+    {
+      "activeSegments": [
+        3,
+        2,
+        11,
+        12,
+        10
+      ],
+      "pixels": {
+        "3-0": true,
+        "2-9": true,
+        "3-1": true,
+        "3-2": true,
+        "2-24": true,
+        "3-25": true,
+        "3-30": true,
+        "3-35": true,
+        "3-7": true,
+        "3-12": true,
+        "3-17": true,
+        "3-22": true,
+        "3-27": true,
+        "3-32": true,
+        "3-37": true,
+        "11-3": true,
+        "11-9": true,
+        "12-5": true,
+        "12-1": true,
+        "10-4": true,
+        "10-8": true,
+        "10-13": true,
+        "11-20": true,
+        "11-21": true,
+        "11-22": true,
+        "11-23": true,
+        "11-33": true,
+        "11-38": true,
+        "11-27": true,
+        "2-17": true,
+        "2-13": true,
+        "2-18": true,
+        "3-10": true,
+        "11-25": true,
+        "11-30": true,
+        "11-35": true,
+        "11-32": true,
+        "10-24": true,
+        "10-18": true,
+        "11-19": true,
+        "12-10": true,
+        "12-6": true
+      }
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    }
+  ]
+}

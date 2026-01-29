@@ -1,0 +1,329 @@
+{
+  "mode": "anim",
+  "width": 16,
+  "height": 2,
+  "functionName": "drawJump",
+  "framesData": [
+    {
+      "activeSegments": [
+        3,
+        19,
+        21
+      ],
+      "pixels": {
+        "3-30": true,
+        "3-35": true,
+        "19-0": true,
+        "19-1": true,
+        "19-2": true,
+        "19-3": true,
+        "19-4": true,
+        "3-39": true,
+        "3-34": true,
+        "3-33": true,
+        "3-32": true,
+        "3-31": true,
+        "19-7": true,
+        "19-12": true,
+        "19-17": true,
+        "19-16": true,
+        "19-15": true,
+        "19-20": true,
+        "19-18": true,
+        "19-19": true,
+        "19-24": true,
+        "19-22": true,
+        "19-27": true,
+        "19-32": true,
+        "19-31": true,
+        "19-30": true,
+        "19-35": true,
+        "19-33": true,
+        "19-34": true,
+        "19-39": true,
+        "21-32": true,
+        "21-37": true,
+        "21-38": true,
+        "21-33": true
+      }
+    },
+    {
+      "activeSegments": [
+        3,
+        4,
+        19,
+        20,
+        21
+      ],
+      "pixels": {
+        "3-23": true,
+        "3-28": true,
+        "4-30": true,
+        "4-31": true,
+        "4-27": true,
+        "4-22": true,
+        "4-16": true,
+        "4-15": true,
+        "3-19": true,
+        "3-18": true,
+        "3-34": true,
+        "3-39": true,
+        "19-3": true,
+        "19-2": true,
+        "19-1": true,
+        "19-4": true,
+        "20-5": true,
+        "20-11": true,
+        "20-17": true,
+        "19-9": true,
+        "19-14": true,
+        "19-19": true,
+        "19-23": true,
+        "19-27": true,
+        "19-31": true,
+        "19-24": true,
+        "20-25": true,
+        "20-30": true,
+        "21-32": true,
+        "21-37": true,
+        "21-33": true,
+        "21-38": true
+      }
+    },
+    {
+      "activeSegments": [
+        4,
+        5,
+        20,
+        21
+      ],
+      "pixels": {
+        "4-28": true,
+        "4-29": true,
+        "4-14": true,
+        "4-13": true,
+        "4-12": true,
+        "4-27": true,
+        "20-23": true,
+        "5-25": true,
+        "5-10": true,
+        "4-33": true,
+        "4-38": true,
+        "20-2": true,
+        "20-3": true,
+        "20-1": true,
+        "20-8": true,
+        "20-13": true,
+        "20-18": true,
+        "20-26": true,
+        "20-22": true,
+        "20-4": true,
+        "20-29": true,
+        "20-34": true,
+        "21-32": true,
+        "21-37": true,
+        "21-38": true,
+        "21-33": true,
+        "4-35": true,
+        "5-35": true,
+        "4-17": true,
+        "4-22": true,
+        "5-15": true,
+        "5-20": true
+      }
+    },
+    {
+      "activeSegments": [
+        5,
+        21,
+        20,
+        6,
+        7
+      ],
+      "pixels": {
+        "5-27": true,
+        "5-28": true,
+        "5-13": true,
+        "5-12": true,
+        "21-22": true,
+        "5-29": true,
+        "5-14": true,
+        "21-1": true,
+        "21-2": true,
+        "21-0": true,
+        "21-3": true,
+        "21-7": true,
+        "21-12": true,
+        "21-16": true,
+        "21-9": true,
+        "21-14": true,
+        "5-33": true,
+        "21-15": true,
+        "20-19": true,
+        "21-26": true,
+        "21-31": true,
+        "5-38": true,
+        "21-32": true,
+        "21-37": true,
+        "21-38": true,
+        "21-33": true,
+        "5-17": true,
+        "5-22": true,
+        "6-10": true,
+        "6-15": true,
+        "6-20": true,
+        "6-25": true,
+        "7-2": true,
+        "7-7": true,
+        "7-12": true,
+        "7-22": true
+      }
+    },
+    {
+      "activeSegments": [
+        21,
+        6,
+        22,
+        7,
+        23
+      ],
+      "pixels": {
+        "21-3": true,
+        "21-4": true,
+        "21-2": true,
+        "21-18": true,
+        "21-17": true,
+        "21-16": true,
+        "21-27": true,
+        "21-23": true,
+        "6-32": true,
+        "6-33": true,
+        "6-34": true,
+        "22-0": true,
+        "22-7": true,
+        "22-8": true,
+        "21-9": true,
+        "21-14": true,
+        "22-15": true,
+        "22-9": true,
+        "7-35": true,
+        "23-0": true,
+        "23-5": true,
+        "7-30": true,
+        "6-37": true,
+        "22-2": true,
+        "22-1": true,
+        "22-10": true,
+        "21-15": true,
+        "21-31": true,
+        "22-21": true,
+        "7-2": true,
+        "7-7": true,
+        "7-12": true,
+        "7-22": true,
+        "21-32": true,
+        "21-37": true,
+        "21-38": true,
+        "21-33": true
+      }
+    },
+    {
+      "activeSegments": [
+        23,
+        22,
+        21
+      ],
+      "pixels": {
+        "23-26": true,
+        "23-31": true,
+        "23-36": true,
+        "23-37": true,
+        "23-38": true,
+        "23-39": true,
+        "23-34": true,
+        "23-29": true,
+        "23-24": true,
+        "23-23": true,
+        "23-22": true,
+        "23-21": true,
+        "23-25": true,
+        "22-29": true,
+        "22-28": true,
+        "22-27": true,
+        "22-25": true,
+        "21-29": true,
+        "22-26": true,
+        "22-32": true,
+        "22-38": true,
+        "21-33": true,
+        "21-38": true,
+        "21-37": true,
+        "23-5": true,
+        "23-11": true,
+        "23-9": true,
+        "23-2": true,
+        "23-13": true,
+        "21-32": true,
+        "21-28": true,
+        "21-27": true,
+        "21-26": true
+      }
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    }
+  ]
+}

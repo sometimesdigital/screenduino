@@ -1,0 +1,200 @@
+{
+  "mode": "anim",
+  "width": 16,
+  "height": 2,
+  "functionName": "drawJump",
+  "framesData": [
+    {
+      "activeSegments": [
+        6,
+        22
+      ],
+      "pixels": {
+        "6-5": true,
+        "6-10": true,
+        "6-15": true,
+        "6-20": true,
+        "6-25": true,
+        "6-26": true,
+        "6-27": true,
+        "6-28": true,
+        "6-29": true,
+        "6-24": true,
+        "6-19": true,
+        "6-14": true,
+        "6-9": true,
+        "6-8": true,
+        "6-7": true,
+        "6-6": true,
+        "6-32": true,
+        "6-37": true,
+        "22-2": true,
+        "22-6": true,
+        "22-8": true,
+        "22-7": true,
+        "22-12": true,
+        "22-17": true,
+        "22-22": true,
+        "22-27": true,
+        "22-31": true,
+        "22-36": true,
+        "22-35": true,
+        "22-33": true,
+        "22-38": true,
+        "22-39": true,
+        "22-26": true,
+        "22-28": true,
+        "22-0": true,
+        "22-4": true
+      }
+    },
+    {
+      "activeSegments": [
+        6,
+        22
+      ],
+      "pixels": {
+        "6-15": true,
+        "6-20": true,
+        "6-25": true,
+        "6-29": true,
+        "6-24": true,
+        "6-32": true,
+        "6-37": true,
+        "22-2": true,
+        "22-14": true,
+        "22-7": true,
+        "22-12": true,
+        "22-17": true,
+        "22-22": true,
+        "22-27": true,
+        "22-31": true,
+        "22-36": true,
+        "22-35": true,
+        "22-33": true,
+        "22-38": true,
+        "22-39": true,
+        "22-32": true,
+        "22-11": true,
+        "22-15": true,
+        "22-10": true,
+        "22-13": true,
+        "22-19": true,
+        "6-31": true,
+        "6-30": true,
+        "6-33": true,
+        "6-34": true,
+        "6-18": true,
+        "6-17": true,
+        "6-16": true,
+        "6-19": true
+      }
+    },
+    {
+      "activeSegments": [
+        6,
+        22
+      ],
+      "pixels": {
+        "6-30": true,
+        "6-34": true,
+        "22-2": true,
+        "22-7": true,
+        "22-19": true,
+        "22-12": true,
+        "22-17": true,
+        "22-22": true,
+        "22-27": true,
+        "22-32": true,
+        "22-16": true,
+        "22-15": true,
+        "22-18": true,
+        "22-24": true,
+        "6-35": true,
+        "6-39": true,
+        "22-20": true,
+        "22-31": true,
+        "22-30": true,
+        "22-35": true,
+        "22-33": true,
+        "22-34": true,
+        "22-39": true,
+        "22-0": true,
+        "22-1": true,
+        "22-3": true,
+        "22-4": true,
+        "6-31": true,
+        "6-32": true,
+        "6-33": true
+      }
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    },
+    {
+      "activeSegments": [],
+      "pixels": {}
+    }
+  ]
+}
