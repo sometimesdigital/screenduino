@@ -5,21 +5,22 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Custom Glyph Generator</title>
+    <title>Screenduino Animation Generator</title>
     <meta name="description"
-        content="Make LCD custom characters using the createChar() function from the LiquidCrystal library.">
+        content="Make LCD custom images and animations using the createChar() function from the LiquidCrystal library.">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
     <link
         href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATklEQVQ4jWNgoAL4j0aToge3AFQMGWOTw2k6PgNJcxopaigKA2yC/4mUo50LKDIAVyyQ5AJC6YB4pxGjBt15JCUkQhrweYGUgMdqAeUAADmCM80nYJooAAAAAElFTkSuQmCC"
         rel="icon" type="image/x-icon" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
 </head>
 <textarea style="opacity: 0; position: fixed; z-index: -99999;" id="dummy"></textarea>
 
 <body>
     <h1>
-        ~`* custom glyph generator *`~
+        Arduino custom sprites and animations generator
     </h1>
     <h2>
         make LCD custom characters using the <a href="https://www.arduino.cc/en/Reference/LiquidCrystalCreateChar">
@@ -30,28 +31,108 @@
     </div>
     <div id="lowerPanel">
         <div id="options">
-            <div style="font-size: 90%;width: 100%; text-align: center;">📌 up to 8 sections can be used at once</div>
+
+    
+            <br>
+            <div id="mode-selector">
+                <input type="radio" id="staticMode" name="mode" value="static" checked onclick="changeMode('static')">
+                <label for="staticMode"><b>Static</b></label>
+                <input type="radio" id="animMode" name="mode" value="anim" onclick="changeMode('anim')">
+                <label for="animMode"><b>Animation</b></label>
+            </div>
+            <br>
+
+            <div id="frame-container" style="display:none; margin-top:10px;">
+                <div style="font-size: 80%;width: 100%;text-align: center;">Select frame</div>
+                <div id="frame-buttons"></div>
+            </div>
             <hr>
+            <button id="x12" onclick="clearCurrentFrame()" title="clear current image">❌</button>
             <button id="x82" onclick="updateCanvasSize(8, 2)">8x2</button>
             <button id="x162" onclick="updateCanvasSize(16, 2)">16x2</button>
             <button id="x204" onclick="updateCanvasSize(20, 4)">20x4</button>
-            <span id="eraseAlert" style="font-size: 90%; opacity: 0.3;">⚠️ erases the screen</span>
+            <span id="eraseAlert" style="font-size: 90%; opacity: 0.5;">⚠️ erases the screen</span>
+
+                <div style="font-size: 80%;width: 100%;padding: 5px; text-align: center;">Only up to 8 sections can be used at once</div>
+
             <hr>
+
             <button id="green" style="background-color: var(--panelBgGreen);"
                 onclick="updateColors('Green')">green</button>
             <button id="blue" style="background-color: var(--panelBgBlue);" onclick="updateColors('Blue')">blue</button>
             <button id="red" style="background-color: var(--panelBgRed);" onclick="updateColors('Red')">red</button>
-            <button id="grayscale" style="background-color: var(--panelBgGrayscale);"
-                onclick="updateColors('Grayscale')">grayscale</button>
+            <button id="grayscale" style="background-color: var(--panelBgGrayscale);" onclick="updateColors('Grayscale')">grayscale</button>
             <hr>
-            <input type="checkbox" id="codeStyle" name="just-the-function" checked>
-            <label for="just-the-function">just the function</label>
 
+            <div class = "code-options" style="display: flex; align-items: center;gap: 10px">
+
+                <input type="checkbox" id="codeStyle" name="include-all-code" checked onchange="changeCodeMode()">
+                <label for="codeStyle" title="Include setup() and loop() ready functions">include all code</label>
+
+                <div id = "library-selector" style="display: flex; align-items: center;margin-left: 30px">
+                    <input type="checkbox" id="library-mode" name="mode" value="static" onchange="changeCodeMode()">
+                    <label for="library-mode" style="font-size: smaller;" title="Recommended for I2C compatible screens, less pins are needed">use I2C library</label>
+                </div>
+
+            </div>
+
+            <!--<input type="checkbox" id="columnMode" name="include-all-code" onchange="updateCode()">
+            <label for="columnMode"  style="font-size: smaller" title="Experimental. Make code more flexible by adding the column where the drawing is done.">Enable column-flexible mode</label>-->
+            <hr>
             <button id="copy" onclick="copyCode()">copy the code</button>
             <span id="copyAlert" style="font-size: 90%; opacity: 0;">📋 copied</span>
+           
+        </div>
+        <div id="central-panel">
+            <button id="playBtn" onclick="togglePlayback()" style="width: 100%; background-color: var(--activePixel); color: white;">
+                ▶ PLAY Animation
+            </button>
+
+            <div id="storage-controls" style="margin-bottom: 15px;">
+                <button onclick="handleExport()" title="Export to JSON">💾 Save</button>
+                <button onclick="document.getElementById('fileInput').click()" title="Import JSON">📂 Load</button>
+                <input type="file" id="fileInput" style="display:none" accept=".json" onchange="handleImport(event)">
+            </div>
+
+            <div id="move-controls">
+                <button onclick="movePanel('up')" class="up" title="Move all active pixels up">⬆️</button>
+                <button onclick="movePanel('left')" class="left" title="Move all active pixels left">⬅️</button>
+                <span>Move Image</span>
+                <button onclick="movePanel('right')" class="right" title="Move all active pixels right">➡️</button>
+                <button onclick="movePanel('down')" class="down" title="Move all active pixels down">⬇️</button>
+            </div>
+            <div id="reflect-controls">
+                <button onclick="mirrorPixels('horizontal')" class="mirror-horizontal" title="Reflect image horizontally">
+                    <span class="material-icons">flip</span>
+                </button>
+                <button onclick="mirrorPixels('vertical')" class="mirror-vertical" title="Reflect image vertically">
+                    <span class="material-icons">flip</span>
+                </button>
+            </div>
+        </div>
+       
+
+        <div id = "code-panel">
+            <div id="bitmap">
+                <pre id="setupCode" style="margin:0;"></pre>
+                <pre id="generatedCode" style="margin:0;"></pre>
+            </div>
+
+             <div style="margin-bottom: 5px;">
+                <label >Function name: </label>
+                <input type="text" style="font-size: 85%;margin-top:10px"id="methodNameInput" value="" oninput="updateFunctionName(this.value)" placeholder="e.g. drawThing">
+            </div>
+            <div style="margin-bottom: 5px;">
+                <label>Delay time (ms)</label>
+                <input type="text" style="font-size: 85%;margin-top:10px"id="delayTimeInput" value="500" oninput="changeAnimationSpeed(this.value)" >
+            </div>
+
 
         </div>
-        <div id="bitmap">
+
+
+        <!-- Extra tags where giving problems
+         <div id="bitmap">
             <span id="setup"></span>
             <span>void image() {</span><br />
             <span id="clear">lcd.clear();</span><br /><br />
@@ -60,9 +141,12 @@
             <div id="createChar"></div><br />
             <div id="setCursor"></div>
             <span>}</span>
-        </div>
+        </div> -->
     </div>
-    <span id="credit">by <a href="https://github.com/nonnullish/">nonnullish</a></span>
+    <hr><hr>
+    <footer id="credit">Made with ❤️ by <a href="https://github.com/alvaro-ruizg">alvarodelchill</a>
+        , forked from screenduino by <a href="https://github.com/nonnullish/">sometimes.digital</a>
+    </footer>
 </body>
 
 </html>
